@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Outreach Website - TEAMALPHA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <!-- LOADING SCREEN -->
+<div id="loadingScreen">
+  <div class="loader-content">
+
+    <!-- University Logo -->
+    <img src="https://th.bing.com/th/id/OIP.Da6U5Na6aIc8kBRHd1CwRAHaHa?w=178&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="SKBU Logo" class="uni-logo">
+
+    <p class="uni">Sidho-Kanho-Birsha University</p>
+    <p class="dept">Department of Computer Science</p>
+    <p class="program">AI Outreach Awareness Program</p>
+
+    <!-- Team Logo -->
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" alt="Team Alpha Logo" class="team-logo">
+
+    <h1 class="team-name">TEAM ALPHA</h1>
+
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+
+  </div>
+</div>
+
+    
+    <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/artificial-intelligence.png" alt="logo">
+      <span>TEAMALPHA</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#team">Team</a></li>
+        <li><a href="#aboutUs">aboutUs</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#data">Data</a></li>
+      <li><a href="#charts">Charts</a></li>
+      <li><a href="#Highlights">Highlights</a></li>
+        <li><a href="#feedback">feedback</a></li>
+        
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+  </div>
+</nav>
+
+
+<header>
+  <div class="banner">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/artificial-intelligence.png" alt="TEAMALPHA Logo">
+    <h1>TEAMALPHA</h1>
+    <p>🤖 AI Outreach Awareness & Survey Program</p>
+  </div>
+</header>
+
+<!-- TEAM SECTION -->
+<section id="team">
+  <h2>👥 Our Team Members</h2>
+  <div class="team" id="teamSection"></div>
+</section>
+    
+    <section id="aboutUs">
+  <h2>🤖 About TEAM ALPHA</h2>
+  <p class="section-desc">
+    TEAM ALPHA is a dedicated group from the Department of Computer Science, 
+    Sidho-Kanho-Birsha University, committed to raising awareness about Artificial Intelligence among local communities.
+  </p>
+
+  <div class="about-cards">
+    <div class="about-card">
+      <img src="https://media.licdn.com/dms/image/v2/D5622AQGI3BOAtjBdEw/feedshare-shrink_800/B56ZuEQzRKHgAg-/0/1767450561320?e=1769644800&v=beta&t=cDceRbZOGkC8Mad5Py26UJe9QPsiT5z0DjaLDwuyMzQ" alt="Mission">
+      <h3>Our Mission</h3>
+      <p>To educate and empower people with fundamental knowledge of AI, making technology accessible for all.</p>
+    </div>
+    <div class="about-card">
+      <img src="https://media.licdn.com/dms/image/v2/D5622AQGI3BOAtjBdEw/feedshare-shrink_800/B56ZuEQzRKHgAg-/0/1767450561320?e=1769644800&v=beta&t=cDceRbZOGkC8Mad5Py26UJe9QPsiT5z0DjaLDwuyMzQ" alt="Vision">
+      <h3>Our Vision</h3>
+      <p>To create AI-literate communities and inspire future innovators from rural and urban areas alike.</p>
+    </div>
+    <div class="about-card">
+      <img src="https://media.licdn.com/dms/image/v2/D5622AQGI3BOAtjBdEw/feedshare-shrink_800/B56ZuEQzRKHgAg-/0/1767450561320?e=1769644800&v=beta&t=cDceRbZOGkC8Mad5Py26UJe9QPsiT5z0DjaLDwuyMzQ" alt="Team">
+      <h3>Our Team</h3>
+      <p>A passionate team of students and researchers from SKBU, dedicated to spreading AI awareness and conducting impactful outreach programs.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SUMMARY SECTION -->
+<section id="summary">
+  <h2>📊 Outreach Summary</h2>
+  <div class="summary">
+    <div class="summary-box">
+      <h3 id="totalSurveyed">0</h3>
+      <p>Total Surveyed</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <div class="summary-box">
+      <h3 id="totalEducated">0</h3>
+      <p>Total Educated</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <div class="summary-box">
+      <h3 id="aiKnown">0</h3>
+      <p>AI Aware</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <div class="summary-box">
+      <h3 id="aiNotKnown">0</h3>
+      <p>AI Not Aware</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+      <div class="summary-box highlight">
+  <h3 id="aiScore">0%</h3>
+  <p>AI Awareness Score</p>
+  <div class="progress-bar">
+    <div class="progress-fill" id="aiScoreBar"></div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- PIE CHART -->
+  <canvas id="aiPieChart" width="400" height="250"></canvas>
+</section>
+
+<!-- MEMBER DATA TABLE -->
+<section id="data">
+  <h2>📋 Member-wise Outreach Data</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Member</th>
+        <th>Surveyed</th>
+        <th>Educated</th>
+        <th>AI Known</th>
+        <th>AI Not Known</th>
+      </tr>
+    </thead>
+    <tbody id="dataTable"></tbody>
+  </table>
+</section>
+
+<!-- MEMBER-BAR CHART -->
+<section id="charts">
+  <h2>📊 Member Survey vs Educated</h2>
+  <canvas id="memberBarChart" width="600" height="300"></canvas>
+</section>
+    <section id="Highlights">
+  <h2>📸 Outreach Survey Highlights</h2>
+  <p class="section-desc">
+    Real-time moments captured during AI awareness surveys and community interaction programs.
+  </p>
+
+  <div class="survey-gallery">
+
+    <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+      <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+      <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+      <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+      <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+      <div class="survey-card">
+      <div class="img-container">
+        <img src="https://www.bing.com/th/id/OIP.zB1rsS80G2GPbY0mMvKnigHaEK?w=266&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="AI survey interaction">
+        <div class="overlay">Community interaction & AI awareness discussion</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+
+    <div class="survey-card">
+      <div class="img-container">
+        <img src="https://media.licdn.com/dms/image/v2/D5622AQF_PyUtNoxIVw/feedshare-shrink_800/B56ZuEQzPCGsAg-/0/1767450561438?e=1769644800&v=beta&t=bXT7qmN_p_mEAv_w0LW0AX1WRNUsEeBwqGpeh7ZqXS0" alt="AI awareness session">
+        <div class="overlay">Explaining AI basics to local residents</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+
+    <div class="survey-card">
+      <div class="img-container">
+        <img src="https://media.licdn.com/dms/image/v2/D5622AQE7cIJduc3oFg/feedshare-shrink_800/B56ZuEQzO6JIAg-/0/1767450562184?e=1769644800&v=beta&t=BicZA7uoq_mwCYzhUEnObjICgDOAjAWpS40ovRE8DOk" alt="Field survey">
+        <div class="overlay">Door-to-door AI awareness survey</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+
+    <div class="survey-card">
+      <div class="img-container">
+        <img src="https://media.licdn.com/dms/image/v2/D5622AQGI3BOAtjBdEw/feedshare-shrink_800/B56ZuEQzRKHgAg-/0/1767450561320?e=1769644800&v=beta&t=cDceRbZOGkC8Mad5Py26UJe9QPsiT5z0DjaLDwuyMzQ" alt="Group awareness program">
+        <div class="overlay">Group discussion on AI applications</div>
+      </div>
+      <p class="meta">📍 Mukutmonipur · 24 Jan 2025</p>
+    </div>
+
+  </div>
+</section>
+    
+    <section id="feedback">
+  <h2>💬 What People Say</h2>
+  <p class="section-desc">
+    Feedback from local residents and participants of TEAM ALPHA's AI outreach program.
+  </p>
+
+  <div class="feedback-container">
+    <div class="feedback-card">
+      <p class="feedback-text">"The AI awareness session really helped me understand technology and its applications. Very informative!"</p>
+      <div class="feedback-meta">
+        <span class="name">– Rina Das</span>
+        <span class="location">📍 Mukutmonipur</span>
+      </div>
+    </div>
+
+    <div class="feedback-card">
+      <p class="feedback-text">"I never knew about AI before, now I feel inspired to learn more. Thank you TEAM ALPHA!"</p>
+      <div class="feedback-meta">
+        <span class="name">– Suman Mahato</span>
+        <span class="location">📍 Baghmundi</span>
+      </div>
+    </div>
+
+    <div class="feedback-card">
+      <p class="feedback-text">"Great initiative by students of SKBU. The outreach program is very helpful for our community."</p>
+      <div class="feedback-meta">
+        <span class="name">– Nisha Kumari</span>
+        <span class="location">📍 Purulia</span>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+    <!-- PROFILE POPUP MODAL -->
+<div id="profileModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalPhoto" alt="Profile Photo">
+    <h2 id="modalName"></h2>
+    <p id="modalRole"></p>
+
+    <div class="modal-stats">
+      <p>👥 Surveyed: <span id="modalSurveyed"></span></p>
+      <p>🎓 Educated: <span id="modalEducated"></span></p>
+      <p>🤖 AI Aware: <span id="modalAiKnown"></span></p>
+      <p>❌ AI Not Aware: <span id="modalAiNotKnown"></span></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<footer>
+  <p>TEAMALPHA – AI Outreach Awareness Project © 2026</p>
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
