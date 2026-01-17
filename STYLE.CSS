@@ -719,4 +719,42 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.9rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .survey-card img,
+  .img-container img {
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .summary-box {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 400px) {
+  .modal-content {
+    padding: 18px;
+  }
+}
+@media (hover: none) {
+  .card:hover,
+  .survey-card:hover,
+  .about-card:hover,
+  .feedback-card:hover {
+    transform: none;
+  }
+}
+.nav-links li a {
+  padding: 8px 0;
+}
+
+
 
