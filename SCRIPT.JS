@@ -27,8 +27,8 @@ const members = [
   { name: "Amit Ranjan Kuiry", role: "Team member", photo: "https://media.licdn.com/dms/image/v2/D5603AQEA2qtXrR_JVg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725687204948?e=1769644800&v=beta&t=FlizpTJpbFpqYt8ub2HlHj60NnH1wmGGc5-2FRV52tM", surveyed: 19, educated: 12, aiKnown: 7, aiNotKnown: 12 },
   { name: "Bablu Mahato", role: "Team Member", photo: "https://media.licdn.com/dms/image/v2/D4D03AQEYRyRhqjJ1pQ/profile-displayphoto-scale_400_400/B4DZuym_l8IIAg-/0/1768228128008?e=1769644800&v=beta&t=c7z3duqL4sXWX7mtEhEnN8OR0CQ5ECQCjChep8TXUmU", surveyed: 19, educated: 12, aiKnown: 8, aiNotKnown: 11 },
   { name: "Rohit Rajwar", role: "Team member", photo: "https://media.licdn.com/dms/image/v2/D5603AQHhn9G_cGn2EQ/profile-displayphoto-shrink_400_400/B56ZRG2MVTGQAk-/0/1736355406482?e=1769644800&v=beta&t=Ty705pcm_o7HEoeHUCdVEDABXl4D1V-M8oKkN7cHZ7s", surveyed: 19, educated: 13, aiKnown: 9, aiNotKnown: 10 },
-  { name: "Sourav Mahatha", role: "Team member", photo: "https://www.linkedin.com/in/sourav-mahatha-436108245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", surveyed: 19, educated: 10, aiKnown: 7, aiNotKnown: 12 },
-  { name: "Nityananda Mahato", role: "Team member", photo: "https://scontent.frdp4-2.fna.fbcdn.net/v/t39.30808-1/332292659_768818367568071_284402613398327059_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=qdH7nvpXWj8Q7kNvwFYDb61&_nc_oc=AdlHbbrZXF4MGladxxfUN6_dwTSgkD0nP-qF_uBGU7cvvRbqbR0N-IeFYBQNX65j0W-mRMy2KWlPDC8sdJAnsJUH&_nc_zt=24&_nc_ht=scontent.frdp4-2.fna&_nc_gid=76feQImppPt8_bwEkAeK_w&oh=00_Afryt9YE_syL2mvUgVCMIJP-bZ3Lcaj8i0CGJv05fEtzrA&oe=696ADBDF", surveyed: 19, educated: 12, aiKnown: 7, aiNotKnown: 12 },
+  { name: "Sourav Mahatha", role: "Team member", photo: "images/sourav.jpeg", surveyed: 19, educated: 10, aiKnown: 7, aiNotKnown: 12 },
+  { name: "Nityananda Mahato", role: "Team member", photo: "images/nitya.jpeg", surveyed: 19, educated: 12, aiKnown: 7, aiNotKnown: 12 },
   { name: "Sayan Banerjee", role: "Team member", photo: "https://media.licdn.com/dms/image/v2/D4D03AQH46QbvLSPfoQ/profile-displayphoto-shrink_400_400/B4DZvG3GeJJQAg-/0/1768567892409?e=2147483647&v=beta&t=oLiXYTymBQafuU35rxpTJ2hUI8SAm4rxcEHJYUxwRRo", surveyed: 19, educated: 11, aiKnown: 9, aiNotKnown: 10 }
 ];
 
@@ -194,5 +194,6 @@ closeBtn.addEventListener("click", () => {
 modal.addEventListener("click", e => {
   if (e.target === modal) modal.style.display = "none";
 });
+
 
 
